@@ -8,6 +8,13 @@ import type separator from "inquirer/lib/objects/separator.js";
 import dfold from "downloads-folder";
 inquirer.registerPrompt("autocomplete", prompt);
 
+/*
+TODO:
+1. Add a selection for commands after image selected
+2. Add a command handler/registrator to register commands in a /commands folder
+3. Add a handler to find commands relevant to image extension, link code with selection
+*/
+
 const VALID_FILE_EXTENSIONS = [
   ".gif",
   ".png",
