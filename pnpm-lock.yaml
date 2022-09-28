@@ -3,10 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@types/inquirer': ^9.0.1
   '@types/node': ^18.7.19
+  '@types/sharp': ^0.31.0
   chalk: ^5.0.1
   downloads-folder: ^3.0.3
   inquirer: ^9.1.2
   inquirer-file-tree-selection-prompt: ^2.0.4
+  nanospinner: ^1.1.0
   rimraf: ^3.0.2
   sharp: ^0.31.0
 
@@ -15,11 +17,13 @@ dependencies:
   downloads-folder: 3.0.3
   inquirer: 9.1.2
   inquirer-file-tree-selection-prompt: 2.0.4_inquirer@9.1.2
+  nanospinner: 1.1.0
   sharp: 0.31.0
 
 devDependencies:
   '@types/inquirer': 9.0.1
   '@types/node': 18.7.19
+  '@types/sharp': 0.31.0
   rimraf: 3.0.2
 
 packages:
@@ -28,11 +32,17 @@ packages:
     resolution: {integrity: sha512-I4eZdYXpFHj0pAzMndJFQMu/4hCc6Z340au9lvxHofGJnFmVgckxR/t9jRzsOVviajsOmEL+OABx+e0e28IbNw==}
     dependencies:
       '@types/through': 0.0.30
-      rxjs: 7.5.6
+      rxjs: 7.5.7
     dev: true
 
   /@types/node/18.7.19:
     resolution: {integrity: sha512-Sq1itGUKUX1ap7GgZlrzdBydjbsJL/NSQt/4wkAxUJ7/OS5c2WkoN6WSpWc2Yc5wtKMZOUA0VCs/j2XJadN3HA==}
+    dev: true
+
+  /@types/sharp/0.31.0:
+    resolution: {integrity: sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==}
+    dependencies:
+      '@types/node': 18.7.19
     dev: true
 
   /@types/through/0.0.30:
@@ -379,7 +389,7 @@ packages:
       figures: 4.0.1
       inquirer: 9.1.2
       lodash: 4.17.21
-      rxjs: 7.5.6
+      rxjs: 7.5.7
     dev: false
 
   /inquirer/9.1.2:
@@ -396,7 +406,7 @@ packages:
       mute-stream: 0.0.8
       ora: 6.1.2
       run-async: 2.4.1
-      rxjs: 7.5.6
+      rxjs: 7.5.7
       string-width: 5.1.2
       strip-ansi: 7.0.1
       through: 2.3.8
@@ -481,6 +491,12 @@ packages:
 
   /mute-stream/0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
+    dev: false
+
+  /nanospinner/1.1.0:
+    resolution: {integrity: sha512-yFvNYMig4AthKYfHFl1sLj7B2nkHL4lzdig4osvl9/LdGbXwrdFRoqBS98gsEsOakr0yH+r5NZ/1Y9gdVB8trA==}
+    dependencies:
+      picocolors: 1.0.0
     dev: false
 
   /napi-build-utils/1.0.2:
@@ -573,6 +589,10 @@ packages:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /picocolors/1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
 
   /prebuild-install/5.3.6:
     resolution: {integrity: sha512-s8Aai8++QQGi4sSbs/M1Qku62PFK49Jm1CbgXklGz4nmHveDq0wzJkg7Na5QbnO1uNH8K7iqx2EQ/mV0MZEmOg==}
@@ -689,8 +709,8 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: false
 
-  /rxjs/7.5.6:
-    resolution: {integrity: sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==}
+  /rxjs/7.5.7:
+    resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
     dependencies:
       tslib: 2.4.0
 

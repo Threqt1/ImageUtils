@@ -5,9 +5,9 @@
   "main": "./out/index.js",
   "scripts": {
     "prebuild": "rimraf out/",
-    "compile": "tsc",
+    "build": "tsc",
     "start": "node .",
-    "run": "npm run prebuild && npm run compile && npm run start"
+    "run": "npm run prebuild && npm run build && npm run start"
   },
   "keywords": [
     "imageutils",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/inquirer": "^9.0.1",
     "@types/node": "^18.7.19",
+    "@types/sharp": "^0.31.0",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "downloads-folder": "^3.0.3",
     "inquirer": "^9.1.2",
     "inquirer-file-tree-selection-prompt": "^2.0.4",
+    "nanospinner": "^1.1.0",
     "sharp": "^0.31.0"
   }
 }
