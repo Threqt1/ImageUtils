@@ -65,7 +65,9 @@ async function saveImagePrompt(
   try {
     await finalImage.toFile(finalPath);
     imageSaved = true;
-  } catch (e) {}
+  } catch (e) {
+    console.log(e);
+  }
   if (imageSaved) {
     spinner.success({
       text: `Successfully modified file ${chalk.bold(
@@ -91,6 +93,7 @@ async function parseFinalImage(
 ) {
   let currentImage = image;
   for (let modification of modifications) {
+    clearConsole();
     let command = CommandsMap[modification]!;
     let args;
     if (command.prompt) {
